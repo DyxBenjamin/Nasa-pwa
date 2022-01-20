@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    width: 40vw;
+    height: 8vw ;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.preview{
+    width: 8vw;
+    height: 100%;
+    position: center;
+}
+
+.description{
+    color: white;
+    width: 90%;
+    padding: 5%;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.1);
+
+    
+    }
+
+li:hover{
+    cursor: pointer;
+}
+
+li:hover .description{
+    opacity: 1;
+    transition: all 1s;
+}

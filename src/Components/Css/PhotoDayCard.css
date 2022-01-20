@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {display: none;}
+
+h1{
+    font-size: 7rem;
+    font-family: "BankGothic Lt BT", sans-serif;
+    }
+
+h3{
+    font-size: 4rem;
+    }
+h4{
+    font-size: 1rem;
+    font-family: "BankGothic Lt BT", sans-serif;
+    
+    }
+p{
+    font-size: 1.5rem;
+    text-align: justify;
+    
+    }
+
+.photoDayCard{
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    }
+
+
+.photoPrincipal{
+height: 100%;
+    
+    }
+
+.infoContainer{
+    position: absolute;
+    height: 100vh;
+    top: 80%;
+    left: 0;
+    z-index: 2;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 30%;
+    backdrop-filter: blur(10px);
+    transition: all 1s;
+    }
+.infoContainer:hover{
+    opacity: 100%;
+    background: rgba(0, 0, 0, 0.03);
+    top: 0;
+    
+    color: white;
+    transition: all 1s;
+    }
+
+.info{
+    margin: 100px;
+   }
+
+@media (max-width: 767px) {
+
+}
