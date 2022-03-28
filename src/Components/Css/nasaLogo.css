@@ -1,14 +1,8 @@
 .nasaLogo{
     z-index: 3;
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 10px;
-
+position: absolute;
     }
 
 .logo{
-    height: 60px;
+    height: 75px;
     }

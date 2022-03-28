@@ -1,8 +1,9 @@
 import { getPhotoToday } from "../Api/getPhotoToday";
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import './Css/PhotoDayCard.css';
-import { WeekPhotos } from "./WeekPhotos";
 import { PhotoContext } from "../Context/PhotoContext";
+import {WeekPhotos} from "./WeekPhotos";
+import {OtherPhotos} from "./OtherPhotos";
 
 
 export function PhotoDayCard( { data } ) {
@@ -20,15 +21,22 @@ export function PhotoDayCard( { data } ) {
 	}, [ photoView ] );
 	
 	return <div className='photoDayCard'>
-		<img className='photoPrincipal' src={ photoDay.url } alt={ photoDay.title } />
-		<div className='infoContainer'>
-			<div className='info'>
+		
+		<div className='main-photo-container'>
+			<img className='photoPrincipal' src={ photoDay.url } alt={ photoDay.title } />
+		</div>
+		
+		<div className='info-container'>
 				<h1>{ photoDay.title }</h1>
 				<hr />
-				<h3>{ photoDay.date }</h3><br /><br />
-				<p>{ photoDay.explanation }</p><br />
+			
+			
+				<h3>{ photoDay.date }</h3>
+				<p>{ photoDay.explanation }</p>
+			<div className='morePhotos'>
+				<WeekPhotos/>
+				<OtherPhotos/>
 			</div>
-
 		</div>
 	</div>;
 	

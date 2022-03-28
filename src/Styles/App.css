@@ -1,33 +1,8 @@
 .App{
     text-align: center;
+    width: 100vw;
+    height: 100vh;
     }
-
-.App-header{
-    min-height: 100vh;
-    background-color: #282C34;
-    font-size: calc(10px + 2vmin);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    }
-
-.App-link{
-    color: #61DAFB;
-    }
-
-button{
-    margin: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    color: white;
-    box-shadow: 5px 5px 10px black;
-    }
-
-button:hover{
-    cursor: pointer;
-    }
-
+div{
+    box-sizing: border-box;
+}

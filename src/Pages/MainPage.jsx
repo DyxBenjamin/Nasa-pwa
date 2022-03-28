@@ -8,16 +8,14 @@ import { OtherPhotos } from "../Components/OtherPhotos";
 
 
 export function MainPage() {
-	return (<div className='mainPage'>
-		<NasaLogo/>
-		<PhotoProvider>
-			<PhotoDayCard/>
-			<div className='morePhotos'>
-				<WeekPhotos/>
-				<OtherPhotos/>
+	return (
+		<div className='main-page-background'>
+			<div  className='main-page-container'>
+				<NasaLogo/>
+				<PhotoProvider>
+					<PhotoDayCard/>
+				</PhotoProvider>
 			</div>
-		</PhotoProvider>
-		
 	</div>);
-};
+}
 
